@@ -113,40 +113,105 @@ footer a {
     color: #9CA3AF;
     text-decoration: none;
 }
-@media (max-width: 900px) {
-    #title {
-        margin-left: 0;
-        text-align: center;
-        font-size: 2.5rem; 
-        margin-bottom: 20px;
+
+
+@media (max-width: 1024px) {
+    #body-wrapper {
+        gap: 30px;
     }
+
+    #text-wrapper {
+        width: 55%;
+        font-size: 19px;
+    }
+
+    #techy-bg {
+        width: 45%;
+        max-width: 500px;
+    }
+
+    #navbar a {
+        font-size: 18px;
+        padding: 12px;
+    }
+}
+/* phones and tablets */
+@media (max-width: 768px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #ul-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #ul-wrapper ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #title {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
     #body-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 30px;
-        padding: 0 20px;
+        gap: 25px;
     }
-    #techy-bg {
-        width: 80%;
-        max-width: 400px;
-        opacity: 0.3;
-    }
+
     #text-wrapper {
-        width: 90%;
-        max-width: 600px;
+        width: 100%;
+        max-width: 650px;
         font-size: 18px;
         line-height: 1.7;
-        text-align: left;
     }
-    #ul-wrapper ul {
-        flex-direction: column;
-        gap: 2px;
-        padding: 1px;
-    }
-    footer {
-        align-items: center;
-        text-align: center;
-        gap: 5px;
+
+    #techy-bg {
+        width: 70%;
+        max-width: 350px;
+        opacity: 0.35;
     }
 }
+/* small phones */
+@media (max-width: 480px) {
+    #navbar #site-name {
+        font-size: 24px;
+    }
 
+    #navbar a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #title {
+        font-size: 1.9rem;
+    }
+
+    #text-wrapper {
+        font-size: 16.5px;
+        line-height: 1.65;
+        padding: 5px;
+    }
+
+    #techy-bg {
+        width: 85%;
+        opacity: 0.25;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
