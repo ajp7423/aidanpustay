@@ -12,7 +12,7 @@ body {
 }
 header {
     background-image: linear-gradient(to top, #202f3e, #27333eb1);
-    margin-bottom: 4em;
+    margin-bottom: 3em;
     padding-left: 50px;
     padding-right: 50px;
     box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.525);
