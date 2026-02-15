@@ -10,6 +10,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+body ul {
+    margin-top: 0;
+    line-height: 1.35;
+}
+body li {
+    margin-bottom: 5px;
+}
 main {
     padding: 5 10px;
     flex: 1;
@@ -100,12 +107,6 @@ header {
     margin: 0;      
 }
 /* ===== Footer ===== */
-#footer-name {
-    margin: 0;
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(to right, transparent, rgba(213, 213, 213, 0.186), transparent) 1;
-    border-image-slice: 1;
-}
 footer {
     display: flex;
     flex-direction: column;
@@ -116,26 +117,43 @@ footer {
     align-items: center; 
     margin-top: 3rem;
 }
+#footer-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, rgba(213, 213, 213, 0.186), transparent) 1;
+    border-image-slice: 1;
+}
 footer a {
     color: #9CA3AF;
     text-decoration: none;
+    font-style: italic;
+    transition: color 0.2s ease;
 }
+footer a:hover {
+    color: #93C5FD;
+}
+#footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
 /* tablets and  laptops */
 @media (max-width: 1024px) {
     #body-wrapper {
         gap: 30px;
     }
-
     #text-wrapper {
         width: 55%;
         font-size: 19px;
     }
-
     #techy-bg {
         width: 45%;
         max-width: 500px;
     }
-
     #navbar a {
         font-size: 18px;
         padding: 12px;
@@ -211,6 +229,9 @@ footer a {
         width: 85%;
         opacity: 0.25;
     }
+    #resume {
+        width: 100%;
+    }
     footer {
         font-size: 14px;
     }
@@ -221,20 +242,37 @@ footer a {
     margin: auto;
     max-width: 60%;
     background-color: #F9FAFB;
-    padding: 10px 40px;
-    padding-bottom: 20px;
+    padding: 40px 80px;
     color: black;
     margin-bottom: 0;
     box-shadow: 6px 6px 10px 10px rgba(10, 10, 10, 0.464);  
 }
 #resume-title {
-    font-size: 2.5em;
+    font-size: 2.7em;
     text-align: center;
+}
+section {
+    margin-bottom: 2rem;
+}
+.section-title {
+    margin-bottom: 5px;
+    font-size: 1.75em;
+}
+#college {
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+#coursework {
+    line-height: 1.5;
+}
+.experience {
+    margin-bottom: 20px;
 }
 .exp-heading {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 5px;
 }
 .exp-date {
     font-style: italic;
