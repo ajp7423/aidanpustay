@@ -10,11 +10,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+main {
+    padding: 5 10px;
+    flex: 1;
+}
+/* ===== Navbar ===== */
 header {
     background-image: linear-gradient(to top, #202f3e, #27333eb1);
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.525);
+    margin-bottom: .5rem;
 }
 #navbar {
     display: flex;
@@ -31,7 +37,7 @@ header {
     gap: 10px;
 }
 #navbar #site-name {
-    font-size: 30px;
+    font-size: 2rem;
 }
 #navbar #site-name:hover {
     color: #60A5FA;
@@ -44,7 +50,7 @@ header {
     position: relative;
     text-decoration: none;
     padding: 15px;
-    font-size: 20px;
+    font-size: 1.3rem;
 }
 #navbar a:hover {
     color: #93C5FD;
@@ -67,11 +73,7 @@ header {
     width: 35px;
     border-radius: 5px;
 }
-main {
-    padding: 5 10px;
-    margin-bottom: 1rem;
-    flex: 1;
-}
+/* ===== Home Page ===== */
 #title {
     margin: 0;
     border-bottom: 1px solid transparent;
@@ -82,11 +84,11 @@ main {
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 2.5rem;
 }
 #text-wrapper {
     width: 50%;
-    font-size: 20px;
+    font-size: 1.25rem;
     line-height: 1.75;
     font-weight: 500;
     padding: 10px;
@@ -97,6 +99,7 @@ main {
     opacity: 0.5;    
     margin: 0;      
 }
+/* ===== Footer ===== */
 #footer-name {
     margin: 0;
     border-bottom: 1px solid transparent;
@@ -117,8 +120,7 @@ footer a {
     color: #9CA3AF;
     text-decoration: none;
 }
-
-/* tablets and small laptops */
+/* tablets and  laptops */
 @media (max-width: 1024px) {
     #body-wrapper {
         gap: 30px;
@@ -211,5 +213,47 @@ footer a {
     }
     footer {
         font-size: 14px;
+    }
+}
+/* ===== Resume ===== */
+#resume {
+    text-align: left;
+    margin: auto;
+    max-width: 60%;
+    background-color: #F9FAFB;
+    padding: 10px 40px;
+    padding-bottom: 20px;
+    color: black;
+    margin-bottom: 0;
+    box-shadow: 6px 6px 10px 10px rgba(10, 10, 10, 0.464);  
+}
+#resume-title {
+    font-size: 2.5em;
+    text-align: center;
+}
+.exp-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.exp-date {
+    font-style: italic;
+}
+@media print {
+    body {
+        background: white;
+    }
+    header, footer, #resume-title {
+        display: none;
+    }
+    #resume {
+        max-width: 100%;
+        margin: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+    a {
+        text-decoration: none;
+        color: black;
     }
 }
